@@ -46,7 +46,7 @@ lg_user_home=$(su - $lg_user -c pwd)
 lg_venv_path=$lg_user_home/.virtualenvs/LookingGlass
 lg_code_path=$lg_user_home/LookingGlass
 
-su - $lg_user -c "git clone https://github.com/ramnode/LookingGlass.git"
+su - $lg_user -c "git clone https://github.com/rawsrv/LookingGlass.git"
 su - $lg_user -c "echo 'source /usr/share/virtualenvwrapper/virtualenvwrapper.sh' >> .bashrc"
 su - $lg_user -c "mkdir $lg_user_home/.virtualenvs"
 su - $lg_user -c "virtualenv $lg_venv_path"
